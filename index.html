@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+</head>
+
+<body>
+    <div class="player">
+        <!-- Dashboard -->
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Dân chơi nghe phát biết nhạc này nhạc gì luôn:</h4>
+                <h2>Music Name</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb" style="background-image: url('https://scontent.fdad2-1.fna.fbcdn.net/v/t39.30808-6/337888916_570792124824348_1311822032888058649_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Jn3hSDrhWdIAX8-2ySg&_nc_ht=scontent.fdad2-1.fna&oh=00_AfBKMv2ciS9Z24ISjDtw-KPuTHnKughnqDqmQJQaBtuZuw&oe=6431D17C')">
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <div class="time-music">
+                <span class="time-music-start">0:00</span>
+                <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100" class="line-music">
+                <span class="time-music-end">4:00</span>
+            </div>
+            <!-- <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100"> -->
+
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <!-- Playlist -->
+        <div class="playlist">
+            <div class="song">
+                <div class="thumb" style="background-image: url(./assets/img/339226487_662665192331377_827429169799646964_n.jpg)">
+
+                </div>
+                <div class="body">
+                    <h3 class="title">Ten bai hat</h3>
+                    <p class="author">Ca si </p>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>
